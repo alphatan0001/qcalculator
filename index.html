@@ -10,27 +10,27 @@
 <body>
     <div id="outer">
         <div id="inner1"></div>
-        <div id="middle"><button id="clear" onclick='document.getElementById("inner1").innerHTML=""'></button></div>
+        <div id="middle"><button id="clear" onclick='myclear();'></button></div>
         <div id="inner2">
-            <button class="buttons" name="1" id="number1" type="button" onclick='document.getElementById("inner1").innerHTML=document.getElementById("inner1").innerHTML+"1"' >1</button>
-            <button class="buttons" name="2" id="number2" type="button" onclick='document.getElementById("inner1").innerHTML=document.getElementById("inner1").innerHTML+"2"'>2</button>
-            <button class="buttons" type="button" onclick='document.getElementById("inner1").innerHTML=document.getElementById("inner1").innerHTML+"3"' >3</button>
-            <button class="buttons" type="button" onclick='document.getElementById("inner1").innerHTML=document.getElementById("inner1").innerHTML+"+"'>+</button>
+            <button class="buttons" type="button" onclick='myval("1")' >1</button>
+            <button class="buttons" type="button" onclick='myval("2")'>2</button>
+            <button class="buttons" type="button" onclick='myval("3")' >3</button>
+            <button class="buttons" type="button" onclick='myval("+")'>+</button>
             <br>
-            <button class="buttons" type="button" onclick='document.getElementById("inner1").innerHTML=document.getElementById("inner1").innerHTML+"4"'>4</button>
-            <button class="buttons" type="button" onclick='document.getElementById("inner1").innerHTML=document.getElementById("inner1").innerHTML+"5"'>5</button>
-            <button class="buttons" type="button" onclick='document.getElementById("inner1").innerHTML=document.getElementById("inner1").innerHTML+"6"'>6</button>
-            <button class="buttons" type="button" onclick='document.getElementById("inner1").innerHTML=document.getElementById("inner1").innerHTML+"-"'>-</button>
+            <button class="buttons" type="button" onclick='myval("4")'>4</button>
+            <button class="buttons" type="button" onclick='myval("5")'>5</button>
+            <button class="buttons" type="button" onclick='myval("6")'>6</button>
+            <button class="buttons" type="button" onclick='myval("-")'>-</button>
             <br>
-            <button class="buttons" type="button" onclick='document.getElementById("inner1").innerHTML=document.getElementById("inner1").innerHTML+"7"'>7</button>
-            <button class="buttons" type="button" onclick='document.getElementById("inner1").innerHTML=document.getElementById("inner1").innerHTML+"8"'>8</button>
-            <button class="buttons" type="button" onclick='document.getElementById("inner1").innerHTML=document.getElementById("inner1").innerHTML+"9"'>9</button>
-            <button class="buttons" type="button" onclick='document.getElementById("inner1").innerHTML=document.getElementById("inner1").innerHTML+"*"'>X</button>
+            <button class="buttons" type="button" onclick='myval("7")'>7</button>
+            <button class="buttons" type="button" onclick='myval("8")'>8</button>
+            <button class="buttons" type="button" onclick='myval("9")'>9</button>
+            <button class="buttons" type="button" onclick='myval("*")'>X</button>
             <br>
-            <button class="buttons" type="button" onclick='document.getElementById("inner1").innerHTML=document.getElementById("inner1").innerHTML+"00"'>00</button>
-            <button class="buttons" type="button" onclick='document.getElementById("inner1").innerHTML=document.getElementById("inner1").innerHTML+"0"'>0</button>
-            <button id="equalsto" class="buttons" type="button" onclick='document.getElementById("inner1").innerHTML=mycalc()'>=</button>
-            <button class="buttons" type="button" onclick='document.getElementById("inner1").innerHTML=document.getElementById("inner1").innerHTML+"/"'>/</button>
+            <button class="buttons" type="button" onclick='myval("00")'>00</button>
+            <button class="buttons" type="button" onclick='myval("0")'>0</button>
+            <button id="equalsto" class="buttons" type="button" onclick='mycalc()'>=</button>
+            <button class="buttons" type="button" onclick='myval("/")'>/</button>
         </div>
     </div>
     <script src="calc.js"></script>
