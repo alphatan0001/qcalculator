@@ -3,8 +3,10 @@
     width:255px;
     border-radius: 30px;
     border-style: solid;
-    background-color:rgb(155, 111, 155);
+    background-color: rgb(53, 0, 53);
+    /*background-color:rgb(155, 111, 155);*/
     box-shadow: 2px 2px 2px 1px;
+    margin-left: 450px;
 }
 #inner1{
     background-color: rgb(230, 230, 230);
